@@ -1,0 +1,12 @@
+Weekly stand-up — transcript
+
+Chioma: Okay, let's start. Ada, where are you on the checkout work?
+Ada: The new checkout page is mostly done. I still need to add the promo code field. Product wants it to reject expired codes with a clear message. I'll pick that up this week.
+Chioma: Great. Tunde?
+Tunde: I found a bug — when the payment webhook times out, we never retry, so some orders stay stuck in "pending". I'll add retries with backoff, maybe three attempts, and log when it finally fails.
+Chioma: That one's urgent, customers are complaining. Please prioritise it.
+Tunde: Will do.
+Grace: I'm blocked on the analytics dashboard until the data team gives us access to the events table. Once I have it I'll build the weekly active users chart.
+Chioma: I'll chase the data team today. Also, someone needs to update the onboarding emails with the new logo — Grace, can you take that after the dashboard?
+Grace: Sure.
+Chioma: Decision for everyone: we're freezing new features on the 15th for the release. Thanks all.
